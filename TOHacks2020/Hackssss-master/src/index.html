@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HelloAngular4</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<script type="text/javascript">
+  /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+  (function(d, m){
+    var kommunicateSettings = {"appId":"2b76f003b3d1b8798a300fce28ced6267","popupWidget":true,"automaticChatOpenOnNavigation":true};
+    var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+    s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+    var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+    window.kommunicate = m; m._globals = kommunicateSettings;
+  })(document, window.kommunicate || {});
+</script>
+
+<body style="background-color:lightblue">
+  <app-root></app-root>
+  
+</body>
+</html>

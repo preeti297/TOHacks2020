@@ -1,0 +1,24 @@
+<div style="margin-left:auto;margin-right:auto;align-content: center; width: fit-content;">
+<h2>Viewing Statistics For {{childMessage}}</h2>
+</div>
+<div style="width: 100%; height: 100px;">
+    <tabs>
+        <tab tabTitle="Statistics">
+            <div style="width: auto; height: 100%; margin-left:auto;margin-right:auto; align-content: center; padding: 20px">
+                <app-stats [childMessage]='childMessage'></app-stats>
+            </div>
+        </tab>
+        <tab style="background-color: white; margin-left:auto;margin-right:auto" tabTitle="Testing Centers">
+            <div style="width: auto; height: 100%; margin-left:auto;margin-right:auto; align-content: center; padding: 20px">
+            <app-testing-centers [childMessage]='childMessage'></app-testing-centers>
+        </div>
+        </tab>
+        <tab tabTitle="County">
+            <div style="width: auto; height: 100%; margin-left:auto;margin-right:auto; align-content: center; padding: 20px">
+                <app-pharmacy [childMessage]='childMessage'></app-pharmacy>
+            </div>
+        </tab>
+      
+        
+    </tabs>
+</div>
